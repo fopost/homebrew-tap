@@ -5,13 +5,13 @@
 class Fopost < Formula
   desc "Schedule and publish social media content from your terminal"
   homepage "https://fopost.com"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fopost/fopost-cli/releases/download/v0.1.1/fopost_0.1.1_darwin_amd64.tar.gz"
-      sha256 "dfcf0f147bf6e7d54f792361a65da0095d5718a3cd513bd73b7fc06ebda48f21"
+      url "https://github.com/fopost/fopost-cli/releases/download/v0.2.0/fopost_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ceba0f95fde16e2fdbcdb1678f4c4a9ef7051a571064628a72972cbf6255c8e7"
 
       define_method(:install) do
         bin.install "fopost"
@@ -19,8 +19,8 @@ class Fopost < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fopost/fopost-cli/releases/download/v0.1.1/fopost_0.1.1_darwin_arm64.tar.gz"
-      sha256 "f9977a3d1a6e7916c97982f9b55e20ee59a0642d3611740b9f03e374dc2fe1ce"
+      url "https://github.com/fopost/fopost-cli/releases/download/v0.2.0/fopost_0.2.0_darwin_arm64.tar.gz"
+      sha256 "445c963da79248248b1d1f6c354cdbb2d7c2685806da409e94083b0ff89eb9ae"
 
       define_method(:install) do
         bin.install "fopost"
@@ -31,16 +31,16 @@ class Fopost < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fopost/fopost-cli/releases/download/v0.1.1/fopost_0.1.1_linux_amd64.tar.gz"
-      sha256 "34f7fdb9b72eb86fd42d7840fbc493792b904b4de9f8c6d44a1f1af05312ff01"
+      url "https://github.com/fopost/fopost-cli/releases/download/v0.2.0/fopost_0.2.0_linux_amd64.tar.gz"
+      sha256 "54a913c3e47cf70ea2fbe7c6ae4b269fd7e2733750e4db50e725a4de8e946738"
       define_method(:install) do
         bin.install "fopost"
         generate_completions_from_executable(bin/"fopost", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fopost/fopost-cli/releases/download/v0.1.1/fopost_0.1.1_linux_arm64.tar.gz"
-      sha256 "5607d765751531c62a2e5fa5207f909c0b1a195de2f6b9eb3dc9e18597a5f655"
+      url "https://github.com/fopost/fopost-cli/releases/download/v0.2.0/fopost_0.2.0_linux_arm64.tar.gz"
+      sha256 "ff844b4e0ccb2d78bdd12cef9ec1b0ffb15567f24b603fbf4454f953bf6369aa"
       define_method(:install) do
         bin.install "fopost"
         generate_completions_from_executable(bin/"fopost", "completion")
