@@ -1,6 +1,6 @@
 # FoPost Homebrew Tap
 
-Formulae for the [FoPost CLI](https://github.com/fopost/fopost-cli).
+Formulae for the [FoPost](https://fopost.com) CLI ([fopost-cli](https://github.com/fopost/fopost-cli)).
 
 ```bash
 brew install fopost/tap/fopost
